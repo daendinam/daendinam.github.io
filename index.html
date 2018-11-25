@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>dtelatnik</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+        <!-- CSS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <!-- DAN TODO - this text bumps up/down w/ different sized hover images? css fix? -->
+                <div class="sidebar sb-width">
+                    <img src="images/dan2.jpg" alt="" class="rounded">
+                    <h4><a href="#">Daniel Telatnik</a></h4>
+                    <a href="https://github.com/daendinam" class="sb-links" target="_blank">Github</a> 
+                    <a href="https://twitter.com/dtelatnik" class="sb-links" target="_blank">Twitter</a>
+                    <a href="https://www.linkedin.com/in/dan-telatnik-74bb9955" class="sb-links" target="_blank">Linkedin</a>
+                    <hr class="hide">
+                
+
+                </div>
+                <div class="seven columns content">
+                    <div class="descr">
+                        <p>Hi. I’m Daniel, a computer science graduate from the <br><a href="#" img-src="images/ut.jpg" class="intro">University of Toronto.</a> </p>
+                        <p>I'm currently working at a healthcare company called <a href="https://roamanalytics.com/">Roam Analytics</a>. We're hiring; reach out!</p>
+                        <hr>
+                        <h5><em><strong>Selected projects</strong></em></h5>
+                        
+                        <div class="projects">
+                            <h3><a href="projects/dota-nn.html" img-src="images/dota.png" class="u-full-width project">dota-nn</a></h3>
+                            <div class="tags">Neural networks, Machine Learning, <a href="#" img-src="images/gaming.gif" class="intro">Dota2</a></div>
+                            <p>What happens when you scrape comments from online communities and feed them into a word-prediction neural network?
+                                <a class="intro" href="https://hackernoon.com/training-a-word-prediction-model-on-videogame-forum-comments-d00dc16d06b0" target="_blank">(Featured on Hackernoon)</a></p>
+                        </div>
+<!--                         <div class="projects">
+                            <h3><a href="https://github.com/daendinam/Kijiji-Coding-Contest/tree/master/2013-coding-contest" img-src="images/Kijiji.jpg" class="u-full-width">Kijiji Coding Contest</a></h3>
+                            <div class="tags">Coding contest, Kijiji</div>
+                            <p>My submission for Kijiji's Summer Coding Contest</p>
+                        </div> -->
+                        <div class="projects">
+                            <h3><a href="http://skin.maozillah.com" img-src="projects/images/sneezus-logo.png" class="u-full-width project">django-skincare</a></h3>
+                            <div class="tags">Django, Python, Community</div>
+                            <p>A quick webtool for skincare enthusiasts to compare and contrast products based on reactions to specific ingredients.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer sb-width">
+                <div id="projList">
+                        <h5><em><strong>Selected works</strong></em></h5>
+                        <a href="#p1">Project title</a>
+                        <a href="#p1">Project title</a>
+                        
+                    </div>
+                    <h6>
+                    <a href="mailto:contact@telatnik.com">Email</a></h6>
+                    <hr>
+                    <p>Daniel Telatnik 2018</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script>
+       // $(function() {
+
+           // $( ".projects a" ).click(function() {
+            //    $( ".descr" ).toggle();
+           //     $( "#projList" ).fadeToggle("slow");
+            //});
+        //});
+
+        $('.intro, .project').bind('mouseover', function() {
+            $('.rounded').attr({
+                src: $(this).attr('img-src') 
+                , 'img-src': $('.rounded').attr('src') 
+            })
+        });
+
+        $('.intro, .project').bind('mouseout', function() {
+             $('.rounded').attr("src", "images/dan2.jpg");
+        });
+
+        // $(document).ready(function() {
+        //     $('.container').addClass('container-loaded');
+        // });
+        </script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-73067402-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+
+    </body>
+    
+</html>

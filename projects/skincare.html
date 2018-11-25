@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>django-skincare</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+        <!-- CSS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+        
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="sidebar sb-width">
+                    <img src="images/sneezus-logo.png" alt="" class="rounded">
+                    <h4><a href="#">django-skincare</a></h4>
+                    <a href="http://telatnik.com" class="sb-links">Portfolio</a>
+                    <a href="https://github.com/daendinam" class="sb-links" target="_blank">Github</a>
+                    <hr class="hide">
+                
+
+                </div>
+                <div class="seven columns content">
+                    <a href="" class="u-full-width"><h3>django-skincare</h3></a>
+                    <div class="tags">Django, Python, Community</div>
+                    <h4>Coming Soon</h4>
+                    <p>
+                        Sorry, this project is currently under development. Email me if you'd like a private link. Below are some screenshots from the upcoming alpha:
+                    </p>
+                    Step 1
+                    <a href="images/sneezus-1.jpg" target="_blank"><img src="images/sneezus-1.jpg"></a>
+                    Loading Page
+                    <a href="images/sneezus-2.jpg" target="_blank"><img src="images/sneezus-2.jpg"></a>
+                    Results Page
+                    <a href="images/sneezus-3.jpg" target="_blank"><img src="images/sneezus-3.jpg"></a>
+                </div>
+            <div class="row">
+                <div class="footer sb-width">
+                <div id="projList">
+                        <h5><em><strong>Selected works</strong></em></h5>
+                        <a href="#p1">Project title</a>
+                        <a href="#p1">Project title</a>
+                    </div>
+
+                    <hr>
+                    <p>Daniel Telatnik 2018</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script>
+        $(function() {
+
+            $( ".projects a" ).click(function() {
+                $( ".descr" ).toggle();
+                $( "#projList" ).fadeToggle("slow");
+            });
+        });
+
+        $('.intro').bind('mouseover', function() {
+            $('.rounded').attr({
+                src: $(this).attr('img-src') 
+                , 'img-src': $('.rounded').attr('src') 
+            })
+        });
+
+        $('.intro').bind('mouseout', function() {
+             $('.rounded').attr("src", "images/dan.jpg");
+        });
+
+        // $(document).ready(function() {
+        //     $('.container').addClass('container-loaded');
+        // });
+        </script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-73067402-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+
+    </body>
+    
+</html>
+</body>
+</html>
